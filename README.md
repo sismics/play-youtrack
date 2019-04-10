@@ -10,12 +10,12 @@ This plugin adds [YouTrack](https://www.jetbrains.com/youtrack/) support to Play
 
 ```
 require:
-    - youtrack -> youtrack 1.0.0
+    - youtrack -> youtrack 1.1.0
 
 repositories:
-    - sismics:
-        type:       http
-        artifact:   "http://release.sismics.com/repo/play/[module]-[revision].zip"
+    - sismicsNexusRaw:
+        type: http
+        artifact: "https://nexus.sismics.com/repository/sismics/[module]-[revision].zip"
         contains:
             - youtrack -> *
 
